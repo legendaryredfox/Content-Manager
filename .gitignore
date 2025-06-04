@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node modules and build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Rust target directory (Tauri backend)
+src-tauri/target/
+src-tauri/Cargo.lock
+
+# Tauri build artifacts
+src-tauri/.tauri-build
+src-tauri/.cargo/
+src-tauri/.fingerprint/
+src-tauri/bundle/
+src-tauri/.package-cache/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Environment files
+.env
+.env.*
