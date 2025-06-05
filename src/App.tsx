@@ -37,7 +37,11 @@ export default function App() {
   return (
     <>
       <main
-        style={{ display: "flex", height: "100vh", fontFamily: "sans-serif" }}
+        style={{
+          display: "flex",
+          height: "100vh",
+          fontFamily: "sans-serif",
+        }}
       >
         <CreatorList
           creators={creators}

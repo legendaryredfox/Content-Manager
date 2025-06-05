@@ -14,7 +14,10 @@ interface Props {
 }
 
 export default function PriceChart({ data }: Props) {
-  const formattedData = data.map((item) => {
+  const sortedData = [...data].sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+  );
+  const formattedData = sortedData.map((item) => {
     const d = new Date(item.date);
     const dateLabel = `${d.getDate().toString().padStart(2, "0")}/${(
       d.getMonth() + 1

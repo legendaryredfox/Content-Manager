@@ -9,7 +9,13 @@ interface Props {
 export default function CreatorList({ creators, selectedId, onSelect }: Props) {
   return (
     <aside
-      style={{ width: "300px", borderRight: "1px solid #ccc", padding: "1rem" }}
+      style={{
+        width: "300px",
+        borderRight: "1px solid #ccc",
+        padding: "1rem",
+        overflowY: "auto",
+        height: "100vh",
+      }}
     >
       <h2>Creators</h2>
       <ul style={{ listStyle: "none", padding: 0 }}>
