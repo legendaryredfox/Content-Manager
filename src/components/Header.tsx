@@ -21,6 +21,9 @@ export default function Header() {
         <Link to="/creator" style={{ textDecoration: "none", color: "black" }}>
           ➕ Cadastrar Creator
         </Link>
+        <Link to="/links" style={{ textDecoration: "none", color: "black" }}>
+          📄 Links
+        </Link>
       </nav>
     </header>
   );

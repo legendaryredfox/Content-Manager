@@ -11,3 +11,10 @@ export type PriceHistory = {
   creator_id: number;
   notes?: string | null;
 };
+
+export type Link = {
+  id: number;
+  url: string;
+  observacoes: string | null;
+  visitado: boolean;
+};

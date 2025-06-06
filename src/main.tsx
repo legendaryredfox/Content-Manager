@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import NewCreator from "./pages/NewCreator";
 import Header from "./components/Header";
+import LinksPage from "./pages/LinksPage";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/creator" element={<NewCreator />} />
+          <Route path="/links" element={<LinksPage />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -42,5 +42,18 @@ pub fn setup_database() -> Result<PathBuf, String> {
     )
     .map_err(|e| format!("Erro ao criar tabela prices: {}", e))?;
 
+    conn.execute(
+        "
+        CREATE TABLE IF NOT EXISTS links (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            url TEXT NOT NULL,
+            observacoes TEXT,
+            visitado INTEGER DEFAULT 0
+        );
+        ",
+        [],
+    )
+    .map_err(|e| format!("Erro ao criar tabela links: {}", e))?;
+
     Ok(db_path)
 }
